@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wedding Organizer - Registration</title>
+    <style>
+        @font-face {
+            font-family: font;
+            src: url(Montserrat-VariableFont_wght.ttf);
+        }
+        
+        body {
+            font-family: font;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/78/5e/6e/785e6e0e5aa68c9613793c3555c1db4e.png'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(84, 139, 221, 0.9); /* Semi-transparent background */
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            margin-left: 20px;
+            width: 175px;
+            height: auto;
+        }
+        
+        nav ul {
+            font-size: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav li {
+            margin-right: 1.5rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff; /* Changed to white for better contrast */
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f0f0f0; /* Slightly lighter hover color */
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 500px;
+            margin: 40px auto;
+            text-align: left;
+            position: relative;
+        }
+
+        form h2 {
+            text-align: center;
+            color: #548bdd;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #548bdd;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #447bbd;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo no outline2.png" alt="logo" class="logo">
+        <nav>
+          <ul>
+            <li><a href="web.html">Home</a></li>
+            <li><a href="galery.html" target="_self">Gallery</a></li>
+            <li><a href="#vendor">Venue</a></li>
+            <li><a href="WO PHOTOGRAFER.html">Photography</a></li>
+            <li><a href="#booth-layout">Booth Layout</a></li>
+            <li><a href="WO - TENTANG KAMI.html">About Us</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form>
+            <h2>Register</h2>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
