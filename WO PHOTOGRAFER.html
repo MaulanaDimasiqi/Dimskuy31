@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splendour's Organizer</title>
+    <style>
+        @font-face {
+            font-family: font;
+            src:  url(Montserrat-VariableFont_wght.ttf);
+        }
+          
+        body {
+            font-family: font;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 1rem;
+        }
+        
+        .banner{
+            margin-top: 8px;
+            width: 1500px;
+            height: auto;
+        }
+        .logo {
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 175px;
+            height: auto;
+        }
+          
+        nav ul {
+            font-size: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+          
+        nav li {
+            margin-right: 1.5rem;
+        }
+          
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .photographer-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            margin: 10px;
+            width: 300px;
+        }
+
+        .photographer-card:hover {
+            transform: scale(1.05);
+        }
+
+        .photographer-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #eee;
+        }
+
+        .photographer-card h3 {
+            padding: 10px;
+        }
+
+        .photographer-card p {
+            margin: 0 10px 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo no outline2.png" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="web.html">Home</a></li>
+                <li><a href="galery.html" target="_self">Gallery</a></li>
+                <li><a href="Venueee.html">Venue</a></li>
+                <li><a href="WO PHOTOGRAFER.html">photography</a></li>
+                <li><a href="#catering">Catering</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="WO - TENTANG KAMI.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="photography greeting.jpg" alt="Greeting banner" class="banner">
+        
+        <section>
+            <div class="photographer-card">
+                <img src="12da0d5045094ec9e5725b5e3d449c10.jpg" alt="Pixel Harmony">
+                <h3>Pixel Harmony</h3>
+                <p>Kami dengan senang hati menyajikan layanan fotografi dari Pixel Harmony, ahli dalam menangkap setiap detil indah dalam momen spesial Anda.</p>
+                <button id="pixelHarmonyBtn">View Details</button>
+            </div>
+
+            <div class="photographer-card">
+                <img src="6728ee4816fc96f94b0f678c68d0fbd7.jpg" alt="Love Lens Creative">
+                <h3>Love Lens Creative</h3>
+                <p>Mengabadikan cinta dan kreativitas dalam setiap bidikan. Love Lens Creative adalah pilihan tepat untuk momen-momen tak terlupakan.</p>
+                <button id="loveLensBtn">View Details</button>
+            </div>
+
+            <div class="photographer-card">
+                <img src="f7865deb0a559706fd436464796bccde.jpg" alt="Detail Depth Photography">
+                <h3>Detail Depth Photography</h3>
+                <p>Detil adalah kunci keindahan. Bersama Detail Depth Photography, kami menangkap momen dengan kedalaman dan kejelasan yang luar biasa.</p>
+                <button id="detailDepthBtn">View Details</button>
+            </div>
+
+            <div class="photographer-card">
+                <img src="d6cf9de81271581cf2b832639a6222f3.jpg" alt="Timeless Frame Studio">
+                <h3>Timeless Frame Studio</h3>
+                <p>Studio yang menciptakan bingkai-bingkai abadi untuk setiap momen istimewa. Percayakan kenangan Anda kepada Timeless Frame Studio.</p>
+                <button id="timelessFrameBtn">View Details</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Splendour's Organizer. All rights reserved.
+    </footer>
+
+    <script>
+        // Fungsi untuk menangani klik tombol Pixel Harmony
+        document.getElementById("pixelHarmonyBtn").onclick = function() {
+            window.location.href = 'pixel_harmony.html';
+        };
+
+        // Fungsi untuk menangani klik tombol Love Lens Creative
+        document.getElementById("loveLensBtn").onclick = function() {
+            window.location.href = 'love_lens_creative.html';
+        };
+
+        // Fungsi untuk menangani klik tombol Detail Depth Photography
+        document.getElementById("detailDepthBtn").onclick = function() {
+            window.location.href = 'detail_depth_photography.html';
+        };
+
+        // Fungsi untuk menangani klik tombol Timeless Frame Studio
+        document.getElementById("timelessFrameBtn").onclick = function() {
+            window.location.href = 'timeless_frame_studio.html';
+        };
+    </script>
+</body>
+</html>
